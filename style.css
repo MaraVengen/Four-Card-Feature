@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+  background-color: var(--very-light-gray);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 1440px;
+  max-width: 100%;
+  margin: 5% auto;
+}
+
+.main {
+  width: 32%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main .first {
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: var(--very-dark-blue);
+}
+
+.main .second {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--very-dark-blue);
+}
+
+.main .desc {
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: var(--grayish-blue);
+}
+
+.card {
+  width: 20rem;
+  background-color: white;
+  margin: 1rem;
+  padding: 1.6rem;
+  border-radius: 5px;
+}
+
+.card .heading {
+  font-size: 1.1rem;
+  color: var(--very-dark-blue);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.card .card_desc {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--grayish-blue);
+  margin-bottom: 1.4rem;
+}
+
+.card img {
+  width: 20%;
+  margin-left: 80%;
+}
+
+.cards_feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col_feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 500px) {
+  .cards_feature {
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px; */
+    display: block;
+  }
+
+  body {
+    padding: 0.8rem 0.5rem;
+  }
+
+  .container {
+    width: 100%;
+    display: block;
+    margin: 1rem auto;
+  }
+  .main {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .main .first,
+  .main .second {
+    font-size: 1rem;
+  }
+
+  .main .desc {
+    font-size: 0.5rem;
+  }
+
+  .col_feature {
+    display: block;
+  }
+
+  img {
+    width: 10%;
+  }
+  .card {
+    width: 80%;
+
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  .card .heading {
+    margin-bottom: 0.3rem;
+    font-size: 0.7rem;
+  }
+  .card .card_desc {
+    margin-bottom: 0.5rem;
+    font-size: 0.5rem;
+  }
+}
