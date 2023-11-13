@@ -84,6 +84,22 @@ body {
   align-items: center;
 }
 
+.supervisor {
+  border-top: 3px solid var(--cyan);
+}
+
+.team {
+  border-top: 3px solid var(--red);
+}
+
+.karma {
+  border-top: 3px solid var(--orange);
+}
+
+.calculator {
+  border-top: 3px solid var(--blue);
+}
+
 .col_feature {
   display: flex;
   flex-direction: column;
